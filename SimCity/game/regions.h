@@ -1,7 +1,5 @@
 /*
 * Header file defining the signatures for all region classes in the simulation
-*
-* Author: Kevin
 */
 #ifndef REGIONS_H
 #define REGIONS_H
