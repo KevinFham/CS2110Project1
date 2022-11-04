@@ -1,8 +1,5 @@
 /*
 *   CSCE2110.001 Project 1 SimCity
-*   Group 4
-*
-*   Members: Kevin Pham, Suraj Varne Sheela, Divyam Jain
 */
 #include <iostream>
 #include <iomanip>
@@ -20,7 +17,7 @@ void UpdateSimulation(vector<vector<Region*>>&, vector<Person*>&, vector<Good*>&
 /* Main Function */
 int main(){
     
-    /* Config File Reading (Author: Kevin, Divyam, and Suraj) */
+    /* Config File Reading */
     string single_line;
     string data;
     string buffer;
@@ -65,7 +62,7 @@ int main(){
     configFile.close();
 
 
-    /* Region File Reading (Author: Kevin, Divyam, and Suraj) */
+    /* Region File Reading */
     fstream regionFile(buffer);
     if (regionFile){    //Check if region file opens
 
@@ -123,7 +120,7 @@ int main(){
     regionFile.close();
 
 
-    /* Simulation Begin (Author: Kevin) */
+    /* Simulation Begin */
     char menuDecision;
     DisplayMenu(simulProperties, regionMap, availableWorkers, availableGoods);
     while(cin >> menuDecision && menuDecision != 'q') {                                 //Constant loop of character input until quit
@@ -146,9 +143,6 @@ int main(){
 /*
 * DisplayMenu() will output entire region map and action menu, prompting the user to enter a character
 * As well as that, all properties pertaining to the whole of the region map will be displayed
-* Author: Kevin
-*
-* TODO: Clear the console when finished with character input processing for cleaner display, then output menu
 */
 void DisplayMenu(int simulationProperties[3], vector<vector<Region*>> regionMap, vector<Person*> availableWorkers, vector<Good*> availableGoods){
 
@@ -189,8 +183,6 @@ void DisplayMenu(int simulationProperties[3], vector<vector<Region*>> regionMap,
 /*
 * ExecuteMenu() requires the user input and pass by reference of the entire region map, taking actions to change the map as the user has chosen.
 *   return true if user input is successfully processed, false if otherwise
-* Author: Kevin
-*
 */
 bool ExecuteMenu(char menuOption, int (&simulationProperties)[3], vector<vector<Region*>> &regionMap, vector<Person*> &availableWorkers, vector<Good*> &availableGoods){
 
@@ -313,8 +305,6 @@ bool ExecuteMenu(char menuOption, int (&simulationProperties)[3], vector<vector<
 * Pollution requires adjacency collection beyond immediate vicinity at industrial population 3, therefore, CheckUpdate(@adjacencies) may not be the best solution for handling such functionality. Therefore, using the
 * x and y coordinates of Industrial districts, the pollution will be handled after the full region map CheckUpdate() iteration. Logically speaking, the growth of an industrial zone triggers a change in pollution,
 * so it is appropriate to trigger it during the update list iteration for better runtime efficiency. 
-*
-* Author: Kevin
 */
 void UpdateSimulation(vector<vector<Region*>>& regionMap, vector<Person*> &availableWorkers, vector<Good*> &availableGoods){
 
