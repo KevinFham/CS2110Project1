@@ -1,7 +1,5 @@
 /*
 * Header file defining the persons and goods structs of the simulation
-*
-* Author: Kevin
 */
 #ifndef CITYSUBJECTS_H
 #define CITYSUBJECTS_H
