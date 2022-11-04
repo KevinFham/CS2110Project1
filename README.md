@@ -14,14 +14,3 @@
 
 <img src="resources/exampleregion.PNG" alt="Example Region File Contents">
 
-## Authors:
-Current Members:
-- _Kevin Pham, Divyam Jain, Suraj Varne Sheela_
-
-Past Contributers:
-- _Moises Galvan Padilla (Left the group)_
-
-## Links:
-Visual Guide Planning Document: https://docs.google.com/document/d/1u8CUQkEtP40IZ--OMijb-o8tbsXpUjiG1IXa2mV2zQg/edit?usp=sharing
-
-Wiki Link: (To be added)
