@@ -1,7 +1,5 @@
 /*
 * Code file defining the functions for all region classes in the simulation
-*
-* Author: Kevin, Suraj, and Divyam
 */
 #include <iostream>
 #include <iomanip>
